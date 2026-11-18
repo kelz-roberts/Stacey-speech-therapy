@@ -1,0 +1,4 @@
+# Prototype for review - not the live site.
+# Delete this file when the site goes live for real.
+User-agent: *
+Disallow: /
