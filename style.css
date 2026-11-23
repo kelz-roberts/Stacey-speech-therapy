@@ -252,9 +252,10 @@ details.faq summary::-webkit-details-marker{display:none}
 details.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--purple)}
 details.faq[open] summary::after{content:"\2212"}
 details.faq .a{padding:0 22px 18px;color:var(--muted)}
-.fees{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fees{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
+.fees>div{flex:1 1 300px;max-width:430px}
 .fees div{background:#fff;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
-@media (max-width:860px){.fees{grid-template-columns:1fr}}
+@media (max-width:860px){.fees>div{flex-basis:100%}}
 .articles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .article{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
 .article .art{height:170px;display:flex;justify-content:center;align-items:center;overflow:hidden;background:#f6f2fd}
