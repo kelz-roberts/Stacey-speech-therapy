@@ -30,6 +30,28 @@ GitHub Pages can't send email itself, so use a form service:
 The form requires a name and at least a phone number or an email. A hidden honeypot field filters out simple spam bots.
 
 ## Before going live
-- Set `var SHOW_PROTOTYPE_NOTES = false;` in `index.html` to hide the prototype bar and the yellow "to confirm" tags.
-- Search `index.html` for `class="confirm"` and replace each one with Stacey's real details (fees, hours, session length, languages, parking, Facebook link, Jasmika's HPCSA number).
-- Have Stacey review the privacy notice.
+
+Done (23 November 2026):
+- All of Stacey's details are in. There are no `class="confirm"` tags left in `index.html`.
+- Privacy notice replaced with her own reviewed POPIA text.
+- `info@staceyspeechtherapy.co.za` confirmed by Stacey as live and monitored.
+
+Still to do, in this order:
+1. **Connect the enquiry form.** It currently tells people "your enquiry goes
+   straight to Stacey" while `FORM_ENDPOINT` is empty, so every message is
+   silently discarded. See "Make the enquiry form send email" above. Send a real
+   test and confirm it arrives before going further.
+2. Point `staceyspeechtherapy.co.za` at the site (see "Custom domain" above).
+3. Set `var SHOW_PROTOTYPE_NOTES = false;` in `index.html` to hide the prototype bar.
+4. Remove the `noindex` meta tag in `index.html` and delete `robots.txt`, so the
+   site can appear in Google. Both are marked in place.
+
+Open question for Stacey, not a blocker: the site runs roughly 120 child or
+parent words to 22 adult ones, and has a "For parents" page with no adult
+equivalent, although the practice treats stroke, brain injury, laryngectomy,
+head and neck cancer, Parkinson's and dysphagia. If she wants that work, a
+"For adults" page is the largest remaining gap.
+
+Also worth her doing off-site: her Google Business Profile and Facebook page
+disagreed on the Friday closing time. Her hours are Monday to Friday 8am to 4pm
+and Saturdays 8am to 12 noon.
